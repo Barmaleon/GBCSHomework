@@ -28,10 +28,26 @@ namespace Anketa
             string height = Console.ReadLine();
             Console.Write("Введите Ваш вес: ");
             string weight = Console.ReadLine();
+            //склеивание
             Console.Write(name + " " + surname + " " + age + " " + height + " " + weight);
             Console.ReadLine();
             string nsahw = name + surname + age + height + weight;
             Console.Write(nsahw);
+            Console.ReadLine();
+            //форматированный вывод
+            int aged = Convert.ToInt32(age);
+            double heightd = Convert.ToDouble(height);
+            double weightd = Convert.ToDouble(weight);
+            Console.Write(name + " " + surname);
+            Console.Write("{0:N}", aged);
+            Console.Write("{0:N}", heightd);
+            Console.Write("{0:N}", weightd);
+            Console.ReadLine();
+            //вывод со знаком $
+            Console.Write(name + " " + surname);
+            Console.Write("{0:C1}", aged);
+            Console.Write("{0:C1}", heightd);
+            Console.Write("{0:C1}", weightd);
             Console.ReadLine();
         }
     }
