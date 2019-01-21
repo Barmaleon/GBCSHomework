@@ -24,9 +24,9 @@ namespace Anketa
             string surname = Console.ReadLine();
             Console.Write("Введите Ваш возраст: ");
             string age = Console.ReadLine();
-            Console.Write("Введите Ваш рост: ");
+            Console.Write("Введите Ваш рост в см: ");
             string height = Console.ReadLine();
-            Console.Write("Введите Ваш вес: ");
+            Console.Write("Введите Ваш вес в кг: ");
             string weight = Console.ReadLine();
             //склеивание
             Console.Write(name + " " + surname + " " + age + " " + height + " " + weight);
@@ -49,6 +49,15 @@ namespace Anketa
             Console.Write("{0:C1}", heightd);
             Console.Write("{0:C1}", weightd);
             Console.ReadLine();
+            //         2. Ввести вес и рост человека.Рассчитать и вывести индекс массы тела(ИМТ) по формуле 
+            //            I = m / (h * h); где m — масса тела в килограммах, h — рост в метрах.
+            Console.WriteLine("Рост " + name + " = " + heightd);
+            Console.WriteLine("Вес " + name + " = " + weightd);
+            Console.WriteLine("Индекс массы тела = " + weightd / (heightd * heightd*0.01));
+            Console.ReadLine();
+
+            //Console.SetCursorPosition(Console.WindowWidth / 2, Console.WindowHeight / 2);
+            //Console.WriteLine("Hello, World!");
         }
     }
 }
