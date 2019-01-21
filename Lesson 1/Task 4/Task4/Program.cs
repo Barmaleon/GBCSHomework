@@ -34,6 +34,7 @@ namespace Task4
             b = c;
             Console.WriteLine("Поменяли обратно: a теперь = " + a + ", b теперь = " + b);
             Console.ReadKey();
+
         }
     }
 }
