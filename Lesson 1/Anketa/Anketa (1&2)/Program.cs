@@ -11,6 +11,7 @@
 //            I = m / (h * h); где m — масса тела в килограммах, h — рост в метрах.
 #endregion
 
+
 namespace Anketa
 {
     class Program

@@ -26,6 +26,7 @@ namespace Task3
             Console.WriteLine("{0:N}", r); //вывод из переменной
             Console.WriteLine("{0:N}", Range(x1,y1,x2,y2)); // вывод методом
             Console.ReadKey();
+
         }
     }
 }
