@@ -35,6 +35,7 @@ namespace Task1a
             y.re = re * x.re - im * x.im;
             return y;
         }
+
         //  Пример вычитания двух комплексных чисел
         public Complex Minus(Complex x)
         {
